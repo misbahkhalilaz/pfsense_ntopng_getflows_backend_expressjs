@@ -1,0 +1,22 @@
+{
+	"name": "app_server",
+	"version": "1.0.0",
+	"description": "get flows from ntopng",
+	"main": "index.js",
+	"dependencies": {
+		"btoa": "^1.2.1",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"headers": "^0.9.6",
+		"jquery": "^3.4.1",
+		"node-fetch": "^2.6.0",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index"
+	},
+	"author": "Misbah Khalil",
+	"license": "ISC"
+}
