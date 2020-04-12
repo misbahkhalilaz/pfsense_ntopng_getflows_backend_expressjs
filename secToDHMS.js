@@ -1,4 +1,4 @@
-toDDHHMMSS = function() {
+toDDHHMMSS = function () {
 	let sec_num = parseInt(this, 10);
 	var days = Math.floor(sec_num / 3600 / 24);
 	sec_num = sec_num - days * 24 * 3600;
@@ -7,6 +7,10 @@ toDDHHMMSS = function() {
 	var minutes = Math.floor(sec_num / 60);
 	sec_num = sec_num - minutes * 60;
 	var seconds = sec_num;
+
+	if (days < 10) {
+		days <= 1 ? (days = "0" + days + "Day ") : (days = "0" + days + "Days ");
+	} else days = days + "Days ";
 
 	if (hours < 10) {
 		hours = "0" + hours;
@@ -18,7 +22,7 @@ toDDHHMMSS = function() {
 		seconds = "0" + seconds;
 	}
 
-	return days + "Days " + hours + ":" + minutes + ":" + seconds;
+	return days + hours + ":" + minutes + ":" + seconds;
 };
 
 module.exports = toDDHHMMSS;
