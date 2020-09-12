@@ -9,7 +9,7 @@
 		"express": "^4.17.1",
 		"headers": "^0.9.6",
 		"jquery": "^3.4.1",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.1",
 		"request": "^2.88.2"
 	},
 	"devDependencies": {},
